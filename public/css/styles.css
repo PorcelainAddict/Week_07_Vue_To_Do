@@ -1,0 +1,72 @@
+body {
+  background-image: url(https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/145/145855/each-person-responds-to-stress-in-a-different-way-but-too-much-stress-can-lead-to-health-problems.jpg?w=1155&h=1163);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#app {
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  align-items: center;
+}
+
+ul {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+
+li span {
+  padding: 8px;
+}
+
+li button {
+  background: #f2360c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  flex-direction: row-reverse;
+}
+
+li.completed {
+  border: 2px solid #1a681e;
+  color: #1a681e;
+}
+
+li.not-completed {
+  border: 2px solid #f2360c;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 50%;
+}
+
+button{
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.quote {
+  background-color: white; opacity: 0.5;
+  font-family: cursive;
+  border: 2px solid black;
+  justify-content: center;
+  align-content: center;
+  float: left;
+  padding: 20px, 30px, 20px, 30px;
+  display: flex;
+}

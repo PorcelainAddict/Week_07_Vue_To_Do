@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/bundle.js"></script>
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="(task, index) in tasks" v-bind:class="task.isCompleted ? 'completed' : 'not-completed' ">
+        <span>{{ task.chore }}</span>
+        <span v-if="task.isCompleted">Done 💚</span>
+        <button v-if="!task.isCompleted" v-on:click="doTask(index)">Not Done</button>
+       </li>
+    </ul>
+
+    <form v-on:submit.prevent="saveNewTask">
+      <label for="new-task">Add a new task:</label>
+      <input type="text" id="text" v-model="newTask"/>
+      <input type="submit" value="Save New Task"/>
+    </form>
+  </div>
+
+  
+  <div class="quote">
+    <h3>I don't know about you, but I practice a disorganized religion. I belong to an unholy disorder. We call ourselves "Our Lady of Perpetual Astonishment."</h3>
+  </div>
+</body>
+</html>
